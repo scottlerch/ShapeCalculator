@@ -1,0 +1,32 @@
+Design Decisions:
+-----------------
+Conceptually all shapes could inherit from Polygon, but that's less efficient
+for simple shapes like rectangles and not as accurate for shapes like circles.
+Also, for curved shapes like circles it's not as easy to implement since the 
+points along the curve of the shape must be calculated.  To demonstrate using
+Polygon as a base class I implemented Ellipse inheriting from Polygon.  This
+was also useful for unit testing the polygon area calculation since I had a 
+simple ellipse area formula to compare against.
+
+There are some trade-offs with Square inheriting from Rectangle. When Square 
+inherits from Rectangle it unnecessarily keeps track of a separate Length and 
+Width field, and because the shapes are mutable it makes setting the Length and 
+Width properties awkward since they must always be equal.  However, by having
+Square inherit from Rectangle it follows the intuitive "is-a" relationship and
+allows casting from Square to Rectangle, plus we can re-use Rectangle's
+implementation almost as-is.
+
+
+TODO:
+-----
+-Add ability to input arbitrary polygons from UI
+-Add unit tests for Polygon and Point
+-Handle polygons that aren't defined clock-wise and that overlap
+-Create MSBuild script with batch file launcher
+-Integrate SandCastle API documentation generation
+
+
+Ideas:
+------
+-Auto-generate the UI using reflection on any objects that derive from Shape
+-Add support for unit selection (English/Metric)

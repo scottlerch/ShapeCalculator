@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CEC6D652-9BE0-4528-9585-73DE3D94A256}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		Notes.txt = Notes.txt
+		ShapeCalculator.vsmdi = ShapeCalculator.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeLibrary", "ShapeLibrary\ShapeLibrary.csproj", "{B9A9A077-DEBD-4F83-904B-CD5A26D32C81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeCalculator", "ShapeCalculator\ShapeCalculator.csproj", "{45522104-CB0E-464A-875F-6223719FD293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShapeLibrary.UnitTest", "ShapeLibrary.UnitTest\ShapeLibrary.UnitTest.csproj", "{AC1530D3-16C2-4990-A7A3-C6AE9A4E8E7E}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = ShapeCalculator.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9A9A077-DEBD-4F83-904B-CD5A26D32C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A9A077-DEBD-4F83-904B-CD5A26D32C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A9A077-DEBD-4F83-904B-CD5A26D32C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A9A077-DEBD-4F83-904B-CD5A26D32C81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45522104-CB0E-464A-875F-6223719FD293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45522104-CB0E-464A-875F-6223719FD293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45522104-CB0E-464A-875F-6223719FD293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45522104-CB0E-464A-875F-6223719FD293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC1530D3-16C2-4990-A7A3-C6AE9A4E8E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC1530D3-16C2-4990-A7A3-C6AE9A4E8E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC1530D3-16C2-4990-A7A3-C6AE9A4E8E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC1530D3-16C2-4990-A7A3-C6AE9A4E8E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
